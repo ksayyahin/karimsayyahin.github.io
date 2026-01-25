@@ -1,11 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Karim Sayyahin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karim Sayyahin | Mechanical Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <h1>Karim Sayyahin</h1>
-  <p>Mechanical Engineering Portfolio</p>
+  <div class="container">
+    <!-- Sidebar / Fixed Left Column -->
+    <header class="sidebar">
+      <div class="profile-section">
+        <h1>Karim Sayyahin</h1>
+        <p class="subtitle">Mechanical Engineering Portfolio</p>
+        <p class="bio-short">Mechanical engineer based in [Location] with a passion for designing innovative solutions.
+        </p>
+
+        <nav class="social-links">
+          <a href="mailto:email@example.com" class="social-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            email@example.com
+          </a>
+          <a href="#" class="social-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+        </nav>
+      </div>
+
+      <div class="skills-section">
+        <h2>Skills</h2>
+        <div class="tags">
+          <span>CAD Design</span>
+          <span>SolidWorks</span>
+          <span>Thermodynamics</span>
+          <span>FEA Analysis</span>
+          <span>Project Management</span>
+          <span>MATLAB</span>
+        </div>
+      </div>
+
+      <div class="languages-section">
+        <h2>Languages</h2>
+        <ul class="list-none">
+          <li>English</li>
+          <li>French</li>
+          <li>Arabic</li>
+        </ul>
+      </div>
+
+      <div class="theme-toggle-container">
+        <!-- Optional Theme Toggle could go here -->
+      </div>
+    </header>
+
+    <!-- Main Content / Right Column -->
+    <main class="content">
+      <section id="intro" class="section">
+        <h2 class="section-label">Intro</h2>
+        <p class="lead-text">
+          I'm Karim Sayyahin, a Mechanical Engineer seeking to leverage my technical expertise and problem-solving
+          skills in a challenging engineering role. My experience covers design, analysis, and implementation of
+          mechanical systems.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <h2 class="section-label">Projects</h2>
+
+        <div class="project-list">
+          <!-- Project Item 1 -->
+          <a href="#" class="project-card">
+            <div class="project-info">
+              <h3>Robotic Arm Design</h3>
+              <span class="project-meta">Oct 2023 &middot; Design Lead &middot; Robotics</span>
+            </div>
+            <div class="project-arrow">→</div>
+          </a>
+
+          <!-- Project Item 2 -->
+          <a href="#" class="project-card">
+            <div class="project-info">
+              <h3>Thermal System Analysis</h3>
+              <span class="project-meta">Aug 2023 &middot; Analyst &middot; Energy</span>
+            </div>
+            <div class="project-arrow">→</div>
+          </a>
+
+          <!-- Project Item 3 -->
+          <a href="#" class="project-card">
+            <div class="project-info">
+              <h3>Automated Assembly Line</h3>
+              <span class="project-meta">May 2023 &middot; Engineer &middot; Manufacturing</span>
+            </div>
+            <div class="project-arrow">→</div>
+          </a>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <h2 class="section-label">Experience</h2>
+
+        <div class="experience-list">
+          <div class="experience-item">
+            <div class="exp-header">
+              <h3>Mechanical Design Engineer</h3>
+              <span class="exp-date">Jan 2024 — Present</span>
+            </div>
+            <p class="exp-company">Tech Solutions Inc. &middot; New York, NY</p>
+            <p class="exp-details">Led the design team for new product development, focusing on efficiency and
+              sustainability. Utilized SolidWorks for 3D modeling and simulation.</p>
+          </div>
+
+          <div class="experience-item">
+            <div class="exp-header">
+              <h3>Junior Engineer</h3>
+              <span class="exp-date">Feb 2022 — Dec 2023</span>
+            </div>
+            <p class="exp-company">Global Engineering Corp &middot; Boston, MA</p>
+            <p class="exp-details">Assisted senior engineers in HVAC system layouts and piping designs. Conducted site
+              visits and prepared technical reports.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
