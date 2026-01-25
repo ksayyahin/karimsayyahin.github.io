@@ -5,142 +5,340 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karim Sayyahin | Mechanical Engineering Portfolio</title>
+
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Inter Font (Premium, Clean) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div class="container">
-    <!-- Sidebar / Fixed Left Column -->
-    <header class="sidebar">
-      <div class="profile-section">
-        <h1>Karim Sayyahin</h1>
-        <p class="subtitle">Mechanical Engineering Portfolio</p>
-        <p class="bio-short">Mechanical engineer based in [Location] with a passion for designing innovative solutions.
-        </p>
 
-        <nav class="social-links">
-          <a href="mailto:email@example.com" class="social-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            email@example.com
-          </a>
-          <a href="#" class="social-link">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-            LinkedIn
-          </a>
-        </nav>
+  <div class="container">
+
+    <!-- 
+      LEFT SIDEBAR 
+      Fixed Profile & Navigation
+    -->
+    <header class="sidebar">
+      <div class="profile-header">
+        <h1>Karim Sayyahin</h1>
+        <p class="profile-role">Mechanical Design Engineer</p>
       </div>
 
+      <p class="profile-bio">
+        Mechanical engineer with a passion for designing innovative, efficient solutions. Based in New York,
+        specializing in CAD design and thermal analysis.
+      </p>
+
+      <!-- Contact / Socials -->
+      <nav class="nav-links">
+        <a href="mailto:email@example.com" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          email@example.com
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          LinkedIn
+        </a>
+        <!-- Optional: Resume Download -->
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Resume PDF
+        </a>
+      </nav>
+
+      <!-- Skills -->
       <div class="skills-section">
-        <h2>Skills</h2>
-        <div class="tags">
-          <span>CAD Design</span>
-          <span>SolidWorks</span>
-          <span>Thermodynamics</span>
-          <span>FEA Analysis</span>
-          <span>Project Management</span>
-          <span>MATLAB</span>
+        <h3 class="section-title">Skills</h3>
+        <div class="tags-wrapper">
+          <span class="tag">SolidWorks</span>
+          <span class="tag">AutoCAD</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag">FEA Analysis</span>
+          <span class="tag">Thermodynamics</span>
+          <span class="tag">Project Mgmt</span>
         </div>
       </div>
 
-      <div class="languages-section">
-        <h2>Languages</h2>
-        <ul class="list-none">
-          <li>English</li>
-          <li>French</li>
-          <li>Arabic</li>
-        </ul>
-      </div>
-
-      <div class="theme-toggle-container">
-        <!-- Optional Theme Toggle could go here -->
+      <!-- Languages -->
+      <div class="skills-section">
+        <h3 class="section-title">Languages</h3>
+        <div class="tags-wrapper">
+          <span class="tag">English</span>
+          <span class="tag">French</span>
+          <span class="tag">Arabic</span>
+        </div>
       </div>
     </header>
 
-    <!-- Main Content / Right Column -->
-    <main class="content">
-      <section id="intro" class="section">
-        <h2 class="section-label">Intro</h2>
-        <p class="lead-text">
-          I'm Karim Sayyahin, a Mechanical Engineer seeking to leverage my technical expertise and problem-solving
-          skills in a challenging engineering role. My experience covers design, analysis, and implementation of
-          mechanical systems.
+
+    <!-- 
+      MAIN CONTENT 
+      Scrollable Right Side
+    -->
+    <main class="main-content">
+
+      <!-- Intro Section -->
+      <section id="intro">
+        <h3 class="section-title">About</h3>
+        <p class="intro-lead">
+          I leverage technical expertise and creative problem-solving to build robust mechanical systems. With
+          experience spanning from fast-paced startups to established engineering firms, I focus on design efficiency,
+          sustainability, and manufacturability.
         </p>
       </section>
 
-      <section id="projects" class="section">
-        <h2 class="section-label">Projects</h2>
+      <!-- Projects Grid -->
+      <section id="projects">
+        <h3 class="section-title">Projects</h3>
 
-        <div class="project-list">
-          <!-- Project Item 1 -->
+        <div class="projects-grid">
+          <!-- Project 1 -->
           <a href="#" class="project-card">
-            <div class="project-info">
-              <h3>Robotic Arm Design</h3>
-              <span class="project-meta">Oct 2023 &middot; Design Lead &middot; Robotics</span>
+            <div class="project-header">
+              <span class="project-title">Robotic Arm Prototype</span>
+              <span class="project-year">2023</span>
             </div>
-            <div class="project-arrow">→</div>
+            <p class="project-desc">Designed a 6-axis robotic arm for industrial assembly, optimizing for weight and
+              range of motion.</p>
+            <div class="project-tags">Design Lead · Robotics · SolidWorks</div>
           </a>
 
-          <!-- Project Item 2 -->
+          <!-- Project 2 -->
           <a href="#" class="project-card">
-            <div class="project-info">
-              <h3>Thermal System Analysis</h3>
-              <span class="project-meta">Aug 2023 &middot; Analyst &middot; Energy</span>
+            <div class="project-header">
+              <span class="project-title">Thermal System Analysis</span>
+              <span class="project-year">2023</span>
             </div>
-            <div class="project-arrow">→</div>
+            <p class="project-desc">Conducted computational fluid dynamics (CFD) simulations to improve cooling
+              efficiency by 15%.</p>
+            <div class="project-tags">Analyst · Energy · ANSYS</div>
           </a>
 
-          <!-- Project Item 3 -->
+          <!-- Project 3 -->
           <a href="#" class="project-card">
-            <div class="project-info">
-              <h3>Automated Assembly Line</h3>
-              <span class="project-meta">May 2023 &middot; Engineer &middot; Manufacturing</span>
+            <div class="project-header">
+              <span class="project-title">Automated Assembly Line</span>
+              <span class="project-year">2022</span>
             </div>
-            <div class="project-arrow">→</div>
+            <p class="project-desc">Engineered a modular conveyor system to streamline packaging processes in a
+              manufacturing plant.</p>
+            <div class="project-tags">Engineer · Manufacturing · PLC</div>
           </a>
         </div>
       </section>
 
-      <section id="experience" class="section">
-        <h2 class="section-label">Experience</h2>
+      <!-- Experience Timeline -->
+      <section id="experience">
+        <h3 class="section-title">Experience</h3>
 
-        <div class="experience-list">
-          <div class="experience-item">
-            <div class="exp-header">
-              <h3>Mechanical Design Engineer</h3>
-              <span class="exp-date">Jan 2024 — Present</span>
+        <div class="experience-group">
+          <!-- Job 1 -->
+          <div class="experience-card">
+            <div class="exp-icon" style="background: #e63946; color: white;">
+              <!-- Placeholder specific color -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
             </div>
-            <p class="exp-company">Tech Solutions Inc. &middot; New York, NY</p>
-            <p class="exp-details">Led the design team for new product development, focusing on efficiency and
-              sustainability. Utilized SolidWorks for 3D modeling and simulation.</p>
+            <div class="exp-content">
+              <div class="exp-header">
+                <h3>Mechanical Design Engineer</h3>
+              </div>
+              <div class="exp-meta">
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  2024 — Present
+                </span>
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8z"></path>
+                  </svg>
+                  Tech Solutions Inc.
+                </span>
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  New York, NY
+                </span>
+              </div>
+              <p class="exp-description">Leading the design team for new consumer product lines. Implementing rapid
+                prototyping workflows to reduce time-to-market by 20%.</p>
+            </div>
           </div>
 
-          <div class="experience-item">
-            <div class="exp-header">
-              <h3>Junior Engineer</h3>
-              <span class="exp-date">Feb 2022 — Dec 2023</span>
+          <!-- Job 2 -->
+          <div class="experience-card">
+            <div class="exp-icon" style="background: #2a9d8f; color: white;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4M12 8h.01"></path>
+              </svg>
             </div>
-            <p class="exp-company">Global Engineering Corp &middot; Boston, MA</p>
-            <p class="exp-details">Assisted senior engineers in HVAC system layouts and piping designs. Conducted site
-              visits and prepared technical reports.</p>
+            <div class="exp-content">
+              <div class="exp-header">
+                <h3>Junior Engineer</h3>
+              </div>
+              <div class="exp-meta">
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  2022 — 2023
+                </span>
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8z"></path>
+                  </svg>
+                  Global Engineering Corp
+                </span>
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Boston, MA
+                </span>
+              </div>
+              <p class="exp-description">Assisted senior engineers in large-scale HVAC system layouts. Prepared
+                technical documentation and conducted site inspections for compliance.</p>
+            </div>
+          </div>
+
+          <!-- Job 3 -->
+          <div class="experience-card">
+            <div class="exp-icon" style="background: #f4a261; color: white;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <div class="exp-content">
+              <div class="exp-header">
+                <h3>Engineering Intern</h3>
+              </div>
+              <div class="exp-meta">
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  2021 — 2022
+                </span>
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 21h18v-8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8z"></path>
+                  </svg>
+                  AutoMotive Dynamics
+                </span>
+                <span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Detroit, MI
+                </span>
+              </div>
+              <p class="exp-description">Supported the chassis design team with component modeling and stress testing
+                analysis.</p>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- Education Section -->
+      <section id="education">
+        <h3 class="section-title">Education</h3>
+
+        <div class="experience-group">
+          <div class="experience-item">
+            <div class="exp-date">2018 — 2022</div>
+            <div class="exp-content">
+              <h3>Bachelor of Mechanical Engineering</h3>
+              <p class="exp-company">University of Technology · State, Country</p>
+              <p class="exp-description">Specialized in Robotics and Automation. Graduated with Honors.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   </div>
 
+
+  <!-- Floating Dock Menu -->
+  <div class="floating-dock-container">
+    <nav class="floating-dock">
+      <a href="#intro" class="dock-item" aria-label="About">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </a>
+      <a href="#projects" class="dock-item" aria-label="Projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </a>
+      <a href="#experience" class="dock-item" aria-label="Experience">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+        </svg>
+      </a>
+      <!-- Education -->
+      <a href="#education" class="dock-item" aria-label="Education">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+        </svg>
+      </a>
+      <a href="mailto:email@example.com" class="dock-item" aria-label="Contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+    </nav>
+  </div>
+
   <script src="js/script.js"></script>
+
 </body>
 
 </html>
