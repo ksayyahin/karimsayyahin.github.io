@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
             if (targetElement) {
                 targetElement.scrollIntoView({
                     behavior: 'smooth'
@@ -14,28 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Optional: Add active class to nav links on scroll (if we had nav links in the sidebar pointing to sections)
-    // Currently the design has social links and a static sidebar, but if we add section navigation later:
-    /*
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.sidebar nav a');
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
-                current = section.getAttribute('id');
+    // Auto-hide floating dock when reaching the bottom footer/education area
+    const dockContainer = document.querySelector('.floating-dock-container');
+    // Distance from bottom to trigger hide (roughly the height of the education card + margins)
+    const fadeThreshold = 200;
+
+    if (dockContainer) {
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+
+            // If we are close to the bottom, hide the dock
+            if (scrollPosition >= docHeight - fadeThreshold) {
+                dockContainer.classList.add('dock-hidden');
+            } else {
+                dockContainer.classList.remove('dock-hidden');
             }
         });
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
-        });
-    });
-    */
+    }
 });
