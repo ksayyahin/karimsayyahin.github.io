@@ -515,15 +515,16 @@ h4 {
    ========================================= */
 
 .project-page-container {
-    max-width: 800px;
+    max-width: var(--page-max-width);
     margin: 0 auto;
     padding: var(--space-lg) var(--space-md);
-    display: block;
-    /* Override default container grid */
+    display: flex;
+    justify-content: center;
 }
 
 .project-content {
-    max-width: 100%;
+    max-width: var(--content-max-width);
+    width: 100%;
 }
 
 .back-link {
@@ -541,8 +542,9 @@ h4 {
 }
 
 .back-link svg {
-    width: 16px;
-    height: 16px;
+    width: 16px !important;
+    height: 16px !important;
+    flex-shrink: 0;
 }
 
 .project-hero {
