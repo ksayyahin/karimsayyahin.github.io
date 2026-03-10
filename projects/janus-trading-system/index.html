@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janus Trading System | Karim Sayyahin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div class="container project-page-container">
+
+        <main class="main-content project-content">
+            <a href="../../index.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Portfolio
+            </a>
+
+            <!-- 1. Hero section -->
+            <section class="project-hero">
+                <div class="hero-header">
+                    <h1>Janus Trading System</h1>
+                    <p class="project-subtitle">A pocket hedge fund</p>
+                    <div class="project-meta-info">
+                        <span class="meta-date">August 2025 to Present</span>
+                        <span class="meta-status status-progress"><span class="status-dot"></span>Active
+                            development</span>
+                    </div>
+                </div>
+
+                <p class="intro-lead">
+                    Janus is a modular trading system that combines news analysis, machine learning predictions, and
+                    price action based trading strategies into a unified signal pipeline. The central idea is to test
+                    whether combining event driven information with quantitative market structure can produce stronger
+                    trading decisions than relying on either one alone.
+                </p>
+
+                <!-- Architecture Diagram Anchor -->
+                <div class="architecture-diagram-placeholder">
+                    <div class="placeholder-box">
+                        <span>[Figma Architecture Diagram Placeholder]</span>
+                    </div>
+                    <p class="placeholder-caption">System architecture demonstrating the signal orchestration pipeline
+                    </p>
+                </div>
+            </section>
+
+            <!-- 2. Project overview -->
+            <section class="project-section">
+                <h3 class="section-title">Project Overview</h3>
+                <p class="project-text">
+                    Janus is designed as a modular algorithmic trading research system. At its core, it acts as an
+                    orchestrated pipeline intended to evaluate how different types of market information interact. The
+                    system runs price ingestion, news scoring, signal generation, and execution logic through a
+                    structured framework built for repeatable testing.
+                </p>
+                <p class="project-text">
+                    Rather than relying solely on pure mathematical models or isolated sentiment feeds, the pipeline is
+                    built to combine event driven news signals with quantitative trading strategies and machine learning
+                    layers. This structure enables a research workflow where independent signal layers can be evaluated
+                    on their own and then tested together in composite strategies.
+                </p>
+            </section>
+
+            <!-- 3. Problem and motivation -->
+            <section class="project-section">
+                <h3 class="section-title">Problem and Motivation</h3>
+                <p class="project-text">
+                    A persistent question in the trading algorithm space is whether markets are better modeled through
+                    pure quantitative rules, through event driven interpretation of news, or through a hybrid approach.
+                    Many existing systems tend to optimize heavily for just one paradigm.
+                </p>
+                <p class="project-text">
+                    Janus is built around the premise that both math and narrative drive price action, and that an
+                    informed system should structurally incorporate both. The engineering motivation is to build an
+                    environment that can cleanly capture disparate inputs such as time series features and news
+                    sentiment, fuse them probabilistically, and route them through logic gates to output controlled
+                    execution commands.
+                </p>
+            </section>
+
+            <!-- 4. System architecture -->
+            <section class="project-section">
+                <h3 class="section-title">System Architecture</h3>
+                <p class="project-text">
+                    The architecture follows a deterministic data flow pipeline to isolate concerns between ingestion,
+                    analysis, and execution.
+                </p>
+                <div class="architecture-list">
+                    <div class="arch-step">
+                        <span class="arch-number">01</span>
+                        <div class="arch-detail">
+                            <strong>Data Ingestion & Storage</strong>
+                            <p>Market and news data are captured and stored locally using DuckDB and Parquet for rapid
+                                sequential reading.</p>
+                        </div>
+                    </div>
+                    <div class="arch-step">
+                        <span class="arch-number">02</span>
+                        <div class="arch-detail">
+                            <strong>Feature Enrichment</strong>
+                            <p>Raw time series and text data are processed into distinct numerical features representing
+                                market structure and news dimensions.</p>
+                        </div>
+                    </div>
+                    <div class="arch-step">
+                        <span class="arch-number">03</span>
+                        <div class="arch-detail">
+                            <strong>Strategy & Signal Orchestration</strong>
+                            <p>Independent predictive layers generate signals which are then combined in a confluence
+                                strategy to filter and weight potential trades.</p>
+                        </div>
+                    </div>
+                    <div class="arch-step">
+                        <span class="arch-number">04</span>
+                        <div class="arch-detail">
+                            <strong>Execution</strong>
+                            <p>Signals are passed to an execution routine responsible for risk sizing, trade logging,
+                                and portfolio tracking before connecting to external APIs.</p>
+                        </div>
+                    </div>
+                    <div class="arch-step">
+                        <span class="arch-number">05</span>
+                        <div class="arch-detail">
+                            <strong>Backtesting</strong>
+                            <p>A custom backtesting pipeline mirrors the live execution path, enabling strategy
+                                validation over historical data slices.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. Key technical components -->
+            <section class="project-section">
+                <h3 class="section-title">Key Technical Components</h3>
+                <div class="components-grid">
+
+                    <div class="component-card">
+                        <h4>News Scoring Layer</h4>
+                        <p>A processing layer that blends sentiment, relevance, novelty, velocity, surprise, and scale
+                            into probabilistic signals to quantify event driven impacts.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <h4>Pattern Forecasting Layer</h4>
+                        <p>An initial predictive module that estimates short horizon price direction based on engineered
+                            time series features and classical market structure.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <h4>Confluence Strategy Layer</h4>
+                        <p>The core logic center that combines the market structure signals with machine learning
+                            outputs. Multiple strategy variants currently exist to test different combination weights.
+                        </p>
+                    </div>
+
+                    <div class="component-card">
+                        <h4>Temporal Convolutional Network</h4>
+                        <p><em>Integration in progress.</em> An advanced modeling component being developed to capture
+                            longer term pattern dependencies within the time series data.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <h4>Risk Map</h4>
+                        <p><em>Development stage.</em> A system intended to dynamicially overlay overall market
+                            volatility and regime shifts onto individual trade sizing decisions.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <h4>Bayesian Optimization</h4>
+                        <p><em>Development stage.</em> A framework to systematically tune the parameters of the strategy
+                            and forecasting layers without purely brute forcing historical bounds.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <h4>Backtesting Pipeline</h4>
+                        <p>A custom built evaluation tool tied directly to the broader system design, enabling
+                            repeatable performance testing across different strategy implementations.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <h4>Execution Engine</h4>
+                        <p>An operation layer handling trade logging, position checking, and profit mapping, currently
+                            configured for structured paper execution.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 6. Engineering challenges -->
+            <section class="project-section">
+                <h3 class="section-title">Engineering Challenges</h3>
+                <p class="project-text">
+                    The primary difficulty in this project is not solely writing a predictive model, but managing the
+                    complexity of joining event driven news signals with market structure. Building a coherent system
+                    requires strict orchestration and modularity so that data flows deterministically from ingestion to
+                    decision.
+                </p>
+                <p class="project-text">
+                    Ensuring that the pipeline is robust enough for repeatable backtesting meant the logic routing had
+                    to be completely decoupled from the execution handler. This isolation allows individual components
+                    to evolve over time without breaking the core system architecture, maintaining a controlled
+                    environment for signal fusion research.
+                </p>
+            </section>
+
+            <!-- 7. Current status -->
+            <section class="project-section">
+                <h3 class="section-title">Current Status</h3>
+                <ul class="clean-list">
+                    <li>System successfully connected to the Alpaca API</li>
+                    <li>Core pipeline assembled and data flow validated</li>
+                    <li>System is ready to begin paper trading in its current state</li>
+                    <li>Signal blending and strategy logic remain under active validation and refinement</li>
+                </ul>
+            </section>
+
+            <!-- 8. Next steps -->
+            <section class="project-section">
+                <h3 class="section-title">Next Steps</h3>
+                <div class="roadmap-layout">
+                    <div class="roadmap-item">
+                        <span class="roadmap-bullet"></span>
+                        <p>Validate and improve the probability outputs of the news scoring layer</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <span class="roadmap-bullet"></span>
+                        <p>Update and expand the range of event driven news sources</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <span class="roadmap-bullet"></span>
+                        <p>Run Janus for one full week on a paper trading account to verify execution logging</p>
+                    </div>
+                    <div class="roadmap-item">
+                        <span class="roadmap-bullet"></span>
+                        <p>Continue iterative improvements on the Temporal Convolutional Network, risk map, and
+                            optimization framework</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. CTA -->
+            <section class="project-cta">
+                <div class="cta-box">
+                    <p>Private repo, details available on request</p>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <div class="floating-dock-container">
+        <nav class="floating-dock">
+            <!-- Back to top or simple navigation -->
+            <a href="../../index.html" class="dock-item" aria-label="Home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+            <a href="mailto:ksayyahin@gmail.com" class="dock-item" aria-label="Contact">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </a>
+        </nav>
+    </div>
+
+    <script src="../../js/script.js"></script>
+
+</body>
+
+</html>
