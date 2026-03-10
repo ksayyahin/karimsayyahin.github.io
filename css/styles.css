@@ -519,12 +519,14 @@ h4 {
     margin: 0 auto;
     padding: var(--space-lg) var(--space-md);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-content {
     max-width: var(--content-max-width);
     width: 100%;
+    margin: 0 auto;
 }
 
 .back-link {
