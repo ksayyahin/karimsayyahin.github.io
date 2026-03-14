@@ -114,6 +114,24 @@ h4 {
     gap: var(--space-lg);
 }
 
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align by default */
+    text-align: center;
+}
+
+.profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: var(--space-md);
+    border: 2px solid var(--border-color);
+    /* Matches the clean geometric feel */
+}
+
 .profile-header h1 {
     font-size: 1.5rem;
     /* 24px */
