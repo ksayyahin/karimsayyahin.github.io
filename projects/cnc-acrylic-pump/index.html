@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNC Acrylic Centrifugal Pump | Karim Sayyahin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+    <div class="container project-page-container">
+
+        <main class="main-content project-content">
+            <a href="../../index.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Portfolio
+            </a>
+
+            <!-- 1. Hero section -->
+            <section class="project-hero">
+                <div class="hero-header">
+                    <h1>CNC Acrylic Centrifugal Pump</h1>
+                    <p class="project-subtitle">Manufacturing a working pump housing from stock acrylic</p>
+                    <div class="project-meta-info">
+                        <span class="meta-date">March 2025 – May 2025</span>
+                        <span class="meta-status status-complete"><span class="status-dot"></span>Completed academic project</span>
+                    </div>
+                </div>
+
+                <div class="media-container media-wide">
+                    <img src="media/pump-front.jpeg" alt="Final assembled acrylic pump housing manufactured from stock material.">
+                </div>
+                <!-- Caption below hero image directly or relying on visual alone as intended. -->
+                <p class="placeholder-caption" style="margin-top: -16px; margin-bottom: 32px">Final assembled acrylic pump housing manufactured from stock material.</p>
+
+                <p class="intro-lead">
+                    This project demonstrates CNC manufacturing workflow from stock material to finished part. Using provided pump geometry, I developed the machining process, generated toolpaths and G code, and machined an acrylic pump housing with drilled and tapped features for final assembly.
+                </p>
+            </section>
+
+            <!-- 2. Project overview -->
+            <section class="project-section">
+                <h3 class="section-title">Project Overview</h3>
+                <p class="project-text">
+                    This project focused on manufacturing a centrifugal pump housing from stock acrylic using CNC machining. The project required turning raw acrylic stock into a functional pump housing with internal volute geometry, drilled and tapped features, and geometry suitable for final assembly.
+                </p>
+                <p class="project-text">
+                    The emphasis was on manufacturing execution, process planning, and translating CAD geometry into a successful machined part. This case study details the CAM strategy, machining sequence, process planning, and successful fabrication required to produce the final component.
+                </p>
+                <br>
+                <h3 class="section-title">Role and Scope</h3>
+                <p class="project-text">
+                    The pump geometry was provided as part of the class project. I did not design the pump itself. My contribution was entirely focused on manufacturing planning and execution. I was responsible for translating the provided part geometry into toolpaths, planning the machining operations, and executing the physical fabrication to deliver a finished, functional component.
+                </p>
+            </section>
+
+            <!-- 3. Final Pump Assembly -->
+            <section class="project-section">
+                <h3 class="section-title">Final Pump Assembly</h3>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="media-container">
+                            <img src="media/pump-angle.jpeg" alt="Three quarter view showing the completed housing and hose connection geometry.">
+                        </div>
+                        <p class="placeholder-caption">Three quarter view showing the completed housing and hose connection geometry.</p>
+                    </div>
+
+                    <div class="gallery-item">
+                        <div class="media-container">
+                            <img src="media/pump-side.jpeg" alt="Side view showing the housing depth and shaft side assembly.">
+                        </div>
+                        <p class="placeholder-caption">Side view showing the housing depth and shaft side assembly.</p>
+                    </div>
+
+                    <div class="gallery-item" style="grid-column: 1 / -1;">
+                        <div class="media-container">
+                            <img src="media/pump-scale.jpeg" alt="Scale reference showing the approximate footprint of the final assembly.">
+                        </div>
+                        <p class="placeholder-caption">Scale reference showing the approximate footprint of the final assembly.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. CAD Geometry -->
+            <section class="project-section">
+                <h3 class="section-title">CAD Geometry</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" style="grid-column: 1 / -1;">
+                        <div class="media-container">
+                            <img src="media/volute-cad.png" alt="CAD view of the volute geometry used as the basis for toolpath generation.">
+                        </div>
+                        <p class="placeholder-caption">CAD view of the volute geometry used as the basis for toolpath generation.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. CNC Toolpath Generation -->
+            <section class="project-section">
+                <h3 class="section-title">CNC Toolpath Generation</h3>
+                <p class="project-text">
+                    The core challenge of machining acrylic is managing heat and chip evacuation to prevent the material from melting or fracturing. The roughing operations focused on bulk material removal from the volute cavity, using aggressive but controlled stepovers. Finishing operations required careful consideration of tool engagement and surface speed to achieve a clean final surface on the internal pump geometry. Extensive simulation was performed prior to any physical cuts to validate the tool motion and prevent costly stock ruin.
+                </p>
+
+                <div class="media-container media-wide">
+                    <video autoplay muted loop playsinline style="transform: scale(1.15);">
+                        <source src="media/toolpath-simulation.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="placeholder-caption" style="margin-top: -16px; margin-bottom: 32px">Machining simulation used to verify cutter motion before CNC execution.</p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="media-container">
+                            <img src="media/toolpath-roughing.png" alt="Roughing toolpath used to remove bulk acrylic material from the internal cavity.">
+                        </div>
+                        <p class="placeholder-caption">Roughing toolpath used to remove bulk acrylic material from the internal cavity.</p>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <div class="media-container">
+                            <img src="media/toolpath-finishing.png" alt="Finishing toolpath used to refine the final volute geometry.">
+                        </div>
+                        <p class="placeholder-caption">Finishing toolpath used to refine the final volute geometry.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. Tooling and Process Planning -->
+            <section class="project-section">
+                <h3 class="section-title">Tooling and Process Planning</h3>
+                <p class="project-text">
+                    The machining process used multiple cutter sizes to progressively remove material, refine the volute cavity, and finish smaller internal features.
+                </p>
+
+                <div class="engineering-table-container">
+                    <table class="engineering-table">
+                        <thead>
+                            <tr>
+                                <th>Tool ID</th>
+                                <th>Tool Type</th>
+                                <th>Diameter (in)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>T0001</td>
+                                <td>End Mill</td>
+                                <td>0.500</td>
+                            </tr>
+                            <tr>
+                                <td>T0002</td>
+                                <td>End Mill</td>
+                                <td>0.125</td>
+                            </tr>
+                            <tr>
+                                <td>Quarter In</td>
+                                <td>Milling</td>
+                                <td>0.250</td>
+                            </tr>
+                            <tr>
+                                <td>38IN</td>
+                                <td>Milling</td>
+                                <td>0.375</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="project-text text-small text-subtle">
+                    Larger tools were used for bulk material removal, while smaller tools were used to reach tighter geometry and finish internal features.
+                </p>
+                <br>
+
+                <h3 class="section-title" style="margin-top: 32px;">Manufacturing Workflow</h3>
+                <div class="architecture-list">
+                    <div class="arch-step">
+                        <span class="arch-number">01</span>
+                        <div class="arch-detail">
+                            <strong>Geometry Translation</strong>
+                            <p>Reviewed the provided CAD geometry and determined the best setup and orientation for machining the internal volute and mating surfaces.</p>
+                        </div>
+                    </div>
+                    <div class="arch-step">
+                        <span class="arch-number">02</span>
+                        <div class="arch-detail">
+                            <strong>CAM and Toolpath Generation</strong>
+                            <p>Developed the machining strategy, mapped out roughing and finishing passes, and generated the necessary G code for the CNC mill.</p>
+                        </div>
+                    </div>
+                    <div class="arch-step">
+                        <span class="arch-number">03</span>
+                        <div class="arch-detail">
+                            <strong>Simulation and Verification</strong>
+                            <p>Verified the toolpaths in simulation to catch potential collisions, prevent tool breakage, and ensure the machining strategy would yield the correct geometric features.</p>
+                        </div>
+                    </div>
+                    <div class="arch-step">
+                        <span class="arch-number">04</span>
+                        <div class="arch-detail">
+                            <strong>CNC Execution</strong>
+                            <p>Machined the acrylic housing from stock material, managing feeds and speeds to ensure clean cuts and avoid melting or cracking the acrylic.</p>
+                        </div>
+                    </div>
+                    <div class="arch-step">
+                        <span class="arch-number">05</span>
+                        <div class="arch-detail">
+                            <strong>Secondary Operations</strong>
+                            <p>Performed necessary drilling and tapping operations to prepare the housing for final assembly with the motor and impeller.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. Outcome -->
+            <section class="project-section">
+                <h3 class="section-title">Outcome</h3>
+                <p class="project-text">
+                    The project resulted in a successfully manufactured acrylic pump housing, complete with all necessary geometries, tapped holes, and mating surfaces. The final part was suitable for assembly as part of the class project and demonstrated capable execution of the manufacturing plan.
+                </p>
+            </section>
+
+            <!-- 8. Reflection -->
+            <section class="project-section">
+                <h3 class="section-title">Reflection</h3>
+                <p class="project-text">
+                    This project reinforced the critical gap between modeling a part and actually building it. Success required thinking heavily through the sequence of operations, anticipating how the tool would interact with the acrylic material, and recognizing the importance of toolpath verification. I gained practical experience in translating complex internal geometry into a tangible, high tolerance component within a real shop environment.
+                </p>
+            </section>
+
+            <!-- 9. CTA -->
+            <section class="project-cta">
+                <div class="cta-box">
+                    <p>Additional build details and visuals available on request.</p>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Floating Dock -->
+    <div class="floating-dock-container">
+        <nav class="floating-dock">
+            <a href="../../index.html" class="dock-item" aria-label="Home">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+            <a href="mailto:ksayyahin@gmail.com" class="dock-item" aria-label="Contact">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </a>
+        </nav>
+    </div>
+
+    <script src="../../js/script.js"></script>
+
+</body>
+
+</html>
